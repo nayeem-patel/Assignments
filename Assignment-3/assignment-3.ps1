@@ -8,7 +8,7 @@ $jsonObject = @"
     }
 "@
 
-$jsonString = $jsonObject | ConvertTo-json
+$jsonString = $jsonObject | ConvertFrom-Json
 $keys = 'a/b/c'
 $jsonKeys = $keys.Split('/')
 $propertyValue = $jsonString
